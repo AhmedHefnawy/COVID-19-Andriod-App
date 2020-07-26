@@ -1,0 +1,92 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout xmlns:android="http://schemas.android.com/apk/res/android"
+
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    tools:context=".Statistics">
+
+
+    <androidx.appcompat.widget.Toolbar
+        android:id="@+id/Statistics_bg_toolbar"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimary"
+        app:title="Statistics"
+        android:theme="@style/Theme.AppCompat"/>
+
+
+    <androidx.recyclerview.widget.RecyclerView
+        android:id="@+id/Staistics_rv"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_above="@+id/Stats_ly_nav_bottom"
+        android:layout_below="@+id/Statistics_bg_toolbar"
+        android:clipToPadding="true"
+        android:padding="15dp" />
+
+
+    <LinearLayout
+        android:id="@+id/Stats_ly_nav_bottom"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:background="@color/green_bottom_nav"
+        android:gravity="center"
+        android:paddingStart="40dp"
+        android:paddingTop="15dp"
+
+        android:paddingEnd="40dp"
+        android:paddingBottom="15dp"
+        android:weightSum="3">
+
+        <TextView
+            android:id="@+id/Statistics_Home"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_home_black"
+            android:gravity="center_horizontal"
+            android:text="Home"
+            android:textColor="@color/black" />
+
+        <TextView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_statistics_colored"
+            android:gravity="center_horizontal"
+            android:text="Statistics"
+            android:textColor="@color/colorPrimary" />
+
+
+
+        <TextView
+            android:id="@+id/Statistics_Question"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_weight="1"
+            android:drawableTop="@drawable/ic_question"
+            android:gravity="center_horizontal"
+            android:text="Info"
+            android:textColor="@color/black" />
+
+
+    </LinearLayout>
+
+    <com.github.loadingview.LoadingView
+        android:id="@+id/loadingView"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:layout_alignParentBottom="true"
+        android:layout_alignParentTop="true"
+        app:lv_duration="15"
+        app:lv_end_color="@color/colorPrimary"
+        app:lv_external_radius="28dp"
+        app:lv_internal_radius="6dp"
+        android:background="@color/dark_alpha_50"
+        app:lv_start_color="@color/colorPrimaryDark"
+        />
+
+</RelativeLayout>

@@ -1,0 +1,4 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="colorPrimary">#FF6D00</color><color name="orange">#F39C12</color> <color name="colorPrimaryDark">#FFAB00</color><color name="colorAccent">#FFD600</color><color name="white">#FFFFFF</color><color name="red">#E74C3C</color><color name="black">#000000</color><color name="green">#2ECC71</color><color name="green_bottom_nav">#FFAB00</color><color name="dark_alpha_50">#80000000</color>
+</resources>
